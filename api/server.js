@@ -17,7 +17,7 @@ var routes = {
             return null;
         }
 
-        var result = {};
+        var result = [];
         for (var zvv_line in this.cache[dateString]) {
             // console.log(`ZVV Line: ${zvv_line}`);
             for (var routes_code in this.cache[dateString][zvv_line]['route_codes']) {
@@ -27,14 +27,8 @@ var routes = {
                     to_time = Math.max(route['to_time_expected'], route['to_time_actual']);
                     return ((from >= from_time && from <= to_time) || (to >= from_time && to <= to_time));
                 });
-                if (routes && routes.length > 0) {
-                    if (!(zvv_line in result)) {
-                        result[zvv_line] = {
-                            route_codes: {}
-                        };
-                    }
-                    result[zvv_line]['route_codes'][routes_code] = routes;
-                }
+
+                result.push(...routes);
             }
         }
         return result;
