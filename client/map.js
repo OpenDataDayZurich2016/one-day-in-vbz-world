@@ -42,7 +42,9 @@ var timer = (function(){
             // when minute changed (i.e. from 09:40 to 09:41)
             // then call again loadTrips
 
-            timeNow += tickMs / 1000;
+            let timeMultiply = 10;
+
+            timeNow += tickMs / 1000 * timeMultiply;
         }, tickMs);
     }
 
