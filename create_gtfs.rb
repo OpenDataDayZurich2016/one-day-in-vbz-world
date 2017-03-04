@@ -1,7 +1,8 @@
 require 'CSV'
 require 'json'
 
-filename = "zurifaest-2016-07-01.csv"
+# filename = "zurifaest-2016-07-01.csv"
+filename = "zurifaest-2016-07-01-line-9.csv"
 
 delay_file_path = "#{Dir.pwd}/generated/#{filename}"
 
