@@ -2,7 +2,8 @@ require 'CSV'
 require 'json'
 
 # filename = "zurifaest-2016-07-01.csv"
-filename = "zurifaest-2016-07-01-line-9.csv"
+filename_date = "2016-07-01"
+filename = "zurifaest-#{filename_date}-line-9.csv"
 
 delay_file_path = "#{Dir.pwd}/generated/#{filename}"
 
@@ -101,7 +102,7 @@ routes_data['9']['route_codes'].each do |route_code, route_data|
     print "#{route_data.size} #{route_data.first['trip_id']} #{route_code}\n"
 end
 
-routes_data_path = "#{Dir.pwd}/generated/routes_data.json"
+routes_data_path = "#{Dir.pwd}/generated/routes_data_#{filename_date}.json"
 File.open(routes_data_path, "w") {|f| f.write(JSON.pretty_generate(routes_data)) }
 
 
