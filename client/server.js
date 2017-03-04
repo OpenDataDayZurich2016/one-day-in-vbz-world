@@ -38,6 +38,16 @@ var routes = {
     }
 };
 
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/map.html');
+});
+app.get('/map.js', function (req, res) {
+    res.sendFile(__dirname + '/map.js');
+});
+app.get('/stops.geojson', function (req, res) {
+    res.sendFile(__dirname + '/stops.geojson');
+});
+
 app.get('/routes', function (req, res) {
     var from, to;
     if (req.query.now) {
