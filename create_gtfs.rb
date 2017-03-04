@@ -6,14 +6,6 @@ filename = "zurifaest-2016-07-01-line-9.csv"
 
 delay_file_path = "#{Dir.pwd}/generated/#{filename}"
 
-class TimeHelpers
-    def self.seconds_to_hhmm(seconds_from_midnight)
-        hrs = seconds_from_midnight / 3600
-        p hrs
-        exit
-    end
-end
-
 
 segment_rows_by_trip_id = {}
 CSV.foreach(delay_file_path, :encoding => 'bom|utf-8', :headers => true) do |row|
@@ -44,11 +36,14 @@ CSV.foreach(delay_file_path, :encoding => 'bom|utf-8', :headers => true) do |row
 
     # exit
 
-
     if segment_rows_by_trip_id[trip_id].nil?
         segment_rows_by_trip_id[trip_id] = {
             'route_name' => row['linie'],
             'trip_id' => trip_id,
+            'from_time_expected' => nil,
+            'from_time_actual' => nil,
+            'to_time_expected' => nil,
+            'to_time_actual' => nil,
             'segments' => [],
         }
     end
@@ -62,6 +57,15 @@ segment_rows_by_trip_id.each do |trip_id, trip_data|
     stop_ids = []
 
     trip_data['segments'].sort_by!{ |el| el['segment_idx'] }
+
+    # Calculate FROM/TO times for whole trip
+    trip_data['from_time_expected'] = trip_data['segments'].first['from_time_expected']
+    trip_data['from_time_actual'] = trip_data['segments'].first['from_time_actual']
+
+    trip_data['to_time_expected'] = trip_data['segments'].last['to_time_expected']
+    trip_data['to_time_actual'] = trip_data['segments'].last['to_time_actual']
+
+    # Calculate delays and HH:MM:SS times
     trip_data['segments'].each do |segment_row|
         delay_a = segment_row['from_time_actual'] - segment_row['from_time_expected']
         delay_b = segment_row['to_time_actual'] - segment_row['to_time_expected']
@@ -71,9 +75,7 @@ segment_rows_by_trip_id.each do |trip_id, trip_data|
         to_time = Time.at(segment_row['to_time_expected']).utc.strftime("%H:%M:%S")
         to_time_rt = Time.at(segment_row['to_time_actual']).utc.strftime("%H:%M:%S")
 
-
         # print "#{segment_row['from_stop_code']} #{from_time}-#{from_time_rt}(#{delay_a}) - #{segment_row['to_stop_code']} #{to_time}-#{to_time_rt}(#{delay_b})\n"
-        # p TimeHelpers::seconds_to_hhmm(stop_time['arrival_expected_time'])
 
         stop_ids.push(segment_row['from_stop_code'])
     end
