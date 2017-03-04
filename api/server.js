@@ -26,6 +26,9 @@ var routes = {
                     from_time = Math.min(route['from_time_expected'], route['from_time_actual']);
                     to_time = Math.max(route['to_time_expected'], route['to_time_actual']);
                     return ((from >= from_time && from <= to_time) || (to >= from_time && to <= to_time));
+                }).map(route => {
+                    route['zvv_line'] = zvv_line;
+                    return route;
                 });
 
                 result.push(...routes);
