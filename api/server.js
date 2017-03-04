@@ -42,5 +42,12 @@ var routes = {
 };
 
 app.get('/routes', function (req, res) {
-    res.json(routes.get(req.query.date, req.query.from, req.query.to));
+    var from, to;
+    if (req.query.now) {
+        from = to = req.query.now;
+    } else {
+        from = req.query.from;
+        to = req.query.to;
+    }
+    res.json(routes.get(req.query.date, from, to));
 });
