@@ -54,6 +54,22 @@ $.ajax({
     }
 });
 
+var timer = (function(){
+    var tickMs = 1000; // we'll decrease it to 100 later
+
+    function init() {
+        setInterval(function(){
+            console.log(timeNow);
+            timeNow += tickMs / 1000;
+        }, tickMs);
+    }
+
+    return {
+        init: init
+    }
+})();
+
+timer.init();
 
 function loadTrips(data) {
     // data = data.slice(0, 1);
