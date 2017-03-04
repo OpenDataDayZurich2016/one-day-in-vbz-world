@@ -33,9 +33,15 @@ var timer = (function(){
     var tickMs = 1000; // we'll decrease it to 100 later
 
     function init() {
+        loadTrips();
+
         setInterval(function(){
             console.log(timeNow);
             // we shall print this inside a UI element
+
+            // when minute changed (i.e. from 09:40 to 09:41)
+            // then call again loadTrips
+
             timeNow += tickMs / 1000;
         }, tickMs);
     }
@@ -44,7 +50,7 @@ var timer = (function(){
         init: init
     }
 })();
-timer.init();
+
 
 $.ajax({
     dataType: "json",
@@ -65,21 +71,25 @@ $.ajax({
             vbz_stops[stop_code] = jsonFeature;
         });
 
-        $.ajax({
-            dataType: "json",
-            url: "routes?date=2016-07-01&now=" + params.time,
-            success: loadTrips,
-            error: function(jqXHR, textStatus, errorThrown) {
-                debugger;
-            }
-        });
+        timer.init();
     },
     error: function(jqXHR, textStatus, errorThrown) {
         debugger;
     }
 });
 
-function loadTrips(data) {
+function loadTrips() {
+    $.ajax({
+        dataType: "json",
+        url: "routes?date=2016-07-01&now=" + timeNow,
+        success: parseTrips,
+        error: function(jqXHR, textStatus, errorThrown) {
+            debugger;
+        }
+    });
+}
+
+function parseTrips(data) {
     // data = data.slice(0, 1);
     for (var trip of data) {
         if (params.lineFilter && trip.zvv_line != params.lineFilter) {
@@ -103,11 +113,11 @@ function loadTrips(data) {
                 depB = nextSegment.from_time_actual;
             }
 
-            if ((params.time >= depA) && (params.time <= depB)) {
+            if ((depA <= timeNow) && (timeNow <= depB)) {
                 var arrB = segment.to_time_actual;
                 let zvv_line = trip.zvv_line;
-                if (params.time <= arrB) {
-                    var timeAC = params.time - depA;
+                if (timeNow <= arrB) {
+                    var timeAC = timeNow - depA;
                     var timeAB = segment.to_time_actual - depA;
                     var ratio = timeAC / timeAB;
                     var coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
