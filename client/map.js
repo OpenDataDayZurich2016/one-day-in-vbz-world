@@ -19,7 +19,15 @@ var vbz_marker_options = {
     fillOpacity: 0.8
 };
 
-var timeNow = 35010;
+// params.time = 35010;
+var params = {};
+
+if (window.location.hash) {
+    window.location.hash.substring(1).split('&').forEach(i => {
+        var param = i.split('=');
+        params[param[0]] = param[1];
+    })
+}
 
 $.ajax({
     dataType: "json",
@@ -42,7 +50,7 @@ $.ajax({
 
         $.ajax({
             dataType: "json",
-            url: "routes?date=2016-07-01&now=" + timeNow,
+            url: "routes?date=2016-07-01&now=" + params.time,
             success: loadTrips,
             error: function(jqXHR, textStatus, errorThrown) {
                 debugger;
@@ -58,7 +66,11 @@ $.ajax({
 function loadTrips(data) {
     // data = data.slice(0, 1);
     for (var trip of data) {
+        if (params.lineFilter && trip.zvv_line != params.lineFilter) {
+            continue;
+        }
         for (var idx = 0; idx < trip.segments.length; idx++) {
+
             var segment = trip.segments[idx];
 
             var vbzStopA = vbz_stops[segment.from_stop_code];
@@ -75,11 +87,11 @@ function loadTrips(data) {
                 depB = nextSegment.from_time_actual;
             }
 
-            if ((timeNow >= depA) && (timeNow <= depB)) {
+            if ((params.time >= depA) && (params.time <= depB)) {
                 var arrB = segment.to_time_actual;
                 let zvv_line = trip.zvv_line;
-                if (timeNow <= arrB) {
-                    var timeAC = timeNow - depA;
+                if (params.time <= arrB) {
+                    var timeAC = params.time - depA;
                     var timeAB = segment.to_time_actual - depA;
                     var ratio = timeAC / timeAB;
                     var coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
