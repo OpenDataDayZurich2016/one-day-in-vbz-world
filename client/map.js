@@ -30,7 +30,7 @@ if (window.location.hash) {
 
 var timeNow = params.time || 35010; // default is 09:44
 var timer = (function(){
-    var tickMs = 1000; // we'll decrease it to 100 later
+    var tickMs = 100; // we'll decrease it to 100 later
 
     function init() {
         loadTrips();
