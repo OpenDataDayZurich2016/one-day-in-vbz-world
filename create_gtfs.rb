@@ -1,7 +1,9 @@
 require 'CSV'
 require 'json'
 
-delay_file_path = "#{Dir.pwd}/generated/zurifaest-2016-07-01-line-9.csv"
+filename = "zurifaest-2016-07-01.csv"
+
+delay_file_path = "#{Dir.pwd}/generated/#{filename}"
 
 class TimeHelpers
     def self.seconds_to_hhmm(seconds_from_midnight)
