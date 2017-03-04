@@ -16,9 +16,6 @@ end
 
 segment_rows_by_trip_id = {}
 CSV.foreach(delay_file_path, :encoding => 'bom|utf-8', :headers => true) do |row|
-    # Check with Markus - first row should be ignored ?
-    next if row['seq_von'].to_i == 1
-
     trip_id = row['fahrt_id']
 
     segment_row = {
@@ -34,6 +31,8 @@ CSV.foreach(delay_file_path, :encoding => 'bom|utf-8', :headers => true) do |row
         'to_time_expected' => row['soll_an_nach'].to_i,
         'to_time_actual' => row['ist_an_nach1'].to_i,
     }
+
+    next if segment_row['from_stop_code'] == segment_row['to_stop_code']
 
     # time_columns = ["soll_an_von", "ist_an_von", "soll_ab_von", "ist_ab_von", "soll_an_nach", "ist_an_nach1", "soll_ab_nach", "ist_ab_nach"]
     # print "#{segment_row['from_stop_code']}-#{segment_row['to_stop_code']}\n"
