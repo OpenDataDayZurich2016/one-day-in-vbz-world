@@ -79,6 +79,9 @@ $.ajax({
     }
 });
 
+var tripMarkers = {};
+
+
 function loadTrips() {
     $.ajax({
         dataType: "json",
@@ -90,53 +93,81 @@ function loadTrips() {
     });
 }
 
+function computeTripPosition(trip) {
+    var coords = [0, 0];
+
+    for (var idx = 0; idx < trip.segments.length; idx++) {
+
+        var segment = trip.segments[idx];
+
+        var vbzStopA = vbz_stops[segment.from_stop_code];
+        var vbzStopB = vbz_stops[segment.to_stop_code];
+
+        var depA = segment.from_time_actual;
+
+        var depB;
+        var isLastStop = idx === (trip.segments.length - 1);
+        if (isLastStop) {
+            depB = segment.to_time_actual;
+        } else {
+            var nextSegment = trip.segments[idx + 1];
+            depB = nextSegment.from_time_actual;
+        }
+
+        if ((depA <= timeNow) && (timeNow <= depB)) {
+            var arrB = segment.to_time_actual;
+
+            if (timeNow <= arrB) {
+                // the vehicle is between A and B
+                var timeAC = timeNow - depA;
+                var timeAB = segment.to_time_actual - depA;
+                var ratio = timeAC / timeAB;
+                var coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
+                var coordY = vbzStopA.geometry.coordinates[1] + (vbzStopB.geometry.coordinates[1] - vbzStopA.geometry.coordinates[1]) * ratio;
+
+                coords = [coordY, coordX];
+            } else {
+                // the vehicle is in B
+                var stopBCoords = vbzStopB.geometry.coordinates;
+                coords = [stopBCoords[1], stopBCoords[0]];
+            }
+
+            break;
+        }
+    }
+
+    return coords;
+}
+
 function parseTrips(data) {
     // data = data.slice(0, 1);
+    function initMarker(trip) {
+        var marker = L.marker([0, 0]);
+        marker.addTo(map).bindPopup(function(){
+            let zvv_line = trip.zvv_line;
+            return zvv_line;
+        });
+        
+        setInterval(function(){
+            var latlng = computeTripPosition(trip);
+            marker.setLatLng(latlng);
+        }, 100);
+
+        tripMarkers[tripId] = marker;
+    }
+
     for (var trip of data) {
         if (params.lineFilter && trip.zvv_line != params.lineFilter) {
             continue;
         }
-        for (var idx = 0; idx < trip.segments.length; idx++) {
 
-            var segment = trip.segments[idx];
-
-            var vbzStopA = vbz_stops[segment.from_stop_code];
-            var vbzStopB = vbz_stops[segment.to_stop_code];
-
-            var isLastStop = idx === (trip.segments.length - 1);
-
-            var depA = segment.from_time_actual;
-            var depB;
-            if (isLastStop) {
-                depB = segment.to_time_actual;
-            } else {
-                var nextSegment = trip.segments[idx + 1];
-                depB = nextSegment.from_time_actual;
-            }
-
-            if ((depA <= timeNow) && (timeNow <= depB)) {
-                var arrB = segment.to_time_actual;
-                let zvv_line = trip.zvv_line;
-                if (timeNow <= arrB) {
-                    var timeAC = timeNow - depA;
-                    var timeAB = segment.to_time_actual - depA;
-                    var ratio = timeAC / timeAB;
-                    var coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
-                    var coordY = vbzStopA.geometry.coordinates[1] + (vbzStopB.geometry.coordinates[1] - vbzStopA.geometry.coordinates[1]) * ratio;
-
-                    var featureCoords = [coordY, coordX];
-                    var marker = L.marker(featureCoords).addTo(map).bindPopup(function(){
-                        return zvv_line;
-                    });
-                } else {
-                    var featureCoords = vbzStopB.geometry.coordinates;
-                    var marker = L.marker([featureCoords[1], featureCoords[0]]).addTo(map).bindPopup(function(){
-                        return zvv_line;
-                    });
-                }
-            }
+        var tripId = trip.trip_id;
+        
+        if (tripMarkers[tripId]) {
+            continue;
         }
-            
+
+        initMarker(trip);
     }
 }
 
