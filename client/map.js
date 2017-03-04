@@ -19,15 +19,32 @@ var vbz_marker_options = {
     fillOpacity: 0.8
 };
 
-// params.time = 35010;
 var params = {};
 
 if (window.location.hash) {
     window.location.hash.substring(1).split('&').forEach(i => {
         var param = i.split('=');
         params[param[0]] = param[1];
-    })
+    });
 }
+
+var timeNow = params.time || 35010; // default is 09:44
+var timer = (function(){
+    var tickMs = 1000; // we'll decrease it to 100 later
+
+    function init() {
+        setInterval(function(){
+            console.log(timeNow);
+            // we shall print this inside a UI element
+            timeNow += tickMs / 1000;
+        }, tickMs);
+    }
+
+    return {
+        init: init
+    }
+})();
+timer.init();
 
 $.ajax({
     dataType: "json",
@@ -61,23 +78,6 @@ $.ajax({
         debugger;
     }
 });
-
-var timer = (function(){
-    var tickMs = 1000; // we'll decrease it to 100 later
-
-    function init() {
-        setInterval(function(){
-            console.log(timeNow);
-            timeNow += tickMs / 1000;
-        }, tickMs);
-    }
-
-    return {
-        init: init
-    }
-})();
-
-timer.init();
 
 function loadTrips(data) {
     // data = data.slice(0, 1);
