@@ -36,8 +36,7 @@ var timer = (function(){
         loadTrips();
 
         setInterval(function(){
-            console.log(timeNow);
-            // we shall print this inside a UI element
+            // TODO - add timeNow in a UI element
 
             // when minute changed (i.e. from 09:40 to 09:41)
             // then call again loadTrips
