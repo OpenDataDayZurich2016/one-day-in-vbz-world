@@ -1,0 +1,2102 @@
+[
+  {
+    "route_short_name": "NA",
+    "route_color": "A1C3E8",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "NA"
+  },
+  {
+    "route_short_name": "910",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "910"
+  },
+  {
+    "route_short_name": "912",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "912"
+  },
+  {
+    "route_short_name": "916",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "916"
+  },
+  {
+    "route_short_name": "917",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "917"
+  },
+  {
+    "route_short_name": "918",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "918"
+  },
+  {
+    "route_short_name": "919",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "919"
+  },
+  {
+    "route_short_name": "91",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "91"
+  },
+  {
+    "route_short_name": "10",
+    "route_color": "E12472",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "10"
+  },
+  {
+    "route_short_name": "162",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "162"
+  },
+  {
+    "route_short_name": "163",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "163"
+  },
+  {
+    "route_short_name": "11",
+    "route_color": "00892F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "11"
+  },
+  {
+    "route_short_name": "12",
+    "route_color": "92D6E3",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "12"
+  },
+  {
+    "route_short_name": "13",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "13"
+  },
+  {
+    "route_short_name": "14",
+    "route_color": "008DC5",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "14"
+  },
+  {
+    "route_short_name": "15",
+    "route_color": "E20A16",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "15"
+  },
+  {
+    "route_short_name": "17",
+    "route_color": "8E224D",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "17"
+  },
+  {
+    "route_short_name": "S18",
+    "route_color": "EB3C2E",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "417"
+  },
+  {
+    "route_short_name": "S18",
+    "route_color": "EB3C2E",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "418"
+  },
+  {
+    "route_short_name": "SN18",
+    "route_color": "EB3C2E",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "419"
+  },
+  {
+    "route_short_name": "25",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "25"
+  },
+  {
+    "route_short_name": "2",
+    "route_color": "E20A16",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "2"
+  },
+  {
+    "route_short_name": "3",
+    "route_color": "00892F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "3"
+  },
+  {
+    "route_short_name": "4",
+    "route_color": "11296F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "4"
+  },
+  {
+    "route_short_name": "23",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "23"
+  },
+  {
+    "route_short_name": "24",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "24"
+  },
+  {
+    "route_short_name": "5",
+    "route_color": "734522",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "5"
+  },
+  {
+    "route_short_name": "6",
+    "route_color": "CA7D3C",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "6"
+  },
+  {
+    "route_short_name": "560",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "560"
+  },
+  {
+    "route_short_name": "7",
+    "route_color": "000000",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "7"
+  },
+  {
+    "route_short_name": "8",
+    "route_color": "8AB51F",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "8"
+  },
+  {
+    "route_short_name": "9",
+    "route_color": "11296F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "9"
+  },
+  {
+    "route_short_name": "1",
+    "route_color": "000000",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "101"
+  },
+  {
+    "route_short_name": "2",
+    "route_color": "E30513",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "102"
+  },
+  {
+    "route_short_name": "3",
+    "route_color": "12A537",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "103"
+  },
+  {
+    "route_short_name": "4",
+    "route_color": "FBB900",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "104"
+  },
+  {
+    "route_short_name": "5",
+    "route_color": "0069B4",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "105"
+  },
+  {
+    "route_short_name": "7",
+    "route_color": "007889",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "107"
+  },
+  {
+    "route_short_name": "9",
+    "route_color": "E77B05",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "109"
+  },
+  {
+    "route_short_name": "10",
+    "route_color": "1C4A87",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "110"
+  },
+  {
+    "route_short_name": "11",
+    "route_color": "E73089",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "111"
+  },
+  {
+    "route_short_name": "12",
+    "route_color": "835F38",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "112"
+  },
+  {
+    "route_short_name": "14",
+    "route_color": "F7E229",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "114"
+  },
+  {
+    "route_short_name": "2E",
+    "route_color": "6851A2",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "461"
+  },
+  {
+    "route_short_name": "610",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "610"
+  },
+  {
+    "route_short_name": "611",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "611"
+  },
+  {
+    "route_short_name": "660",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "660"
+  },
+  {
+    "route_short_name": "667",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "667"
+  },
+  {
+    "route_short_name": "674",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "674"
+  },
+  {
+    "route_short_name": "31",
+    "route_color": "A5A2C6",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "31"
+  },
+  {
+    "route_short_name": "32",
+    "route_color": "CCB2D1",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "32"
+  },
+  {
+    "route_short_name": "N59",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "339"
+  },
+  {
+    "route_short_name": "N61",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "357"
+  },
+  {
+    "route_short_name": "N65",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "360"
+  },
+  {
+    "route_short_name": "N66",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "361"
+  },
+  {
+    "route_short_name": "N67",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "362"
+  },
+  {
+    "route_short_name": "33",
+    "route_color": "DAD69C",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "33"
+  },
+  {
+    "route_short_name": "34",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "34"
+  },
+  {
+    "route_short_name": "46",
+    "route_color": "C1D59F",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "46"
+  },
+  {
+    "route_short_name": "72",
+    "route_color": "C6A693",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "72"
+  },
+  {
+    "route_short_name": "N45",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "353"
+  },
+  {
+    "route_short_name": "N72",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "364"
+  },
+  {
+    "route_short_name": "N78",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "365"
+  },
+  {
+    "route_short_name": "N62",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "370"
+  },
+  {
+    "route_short_name": "3740",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "382"
+  },
+  {
+    "route_short_name": "3740",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "385"
+  },
+  {
+    "route_short_name": "449",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "449"
+  },
+  {
+    "route_short_name": "450",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "450"
+  },
+  {
+    "route_short_name": "451",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "451"
+  },
+  {
+    "route_short_name": "452",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "452"
+  },
+  {
+    "route_short_name": "453",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "453"
+  },
+  {
+    "route_short_name": "455",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "455"
+  },
+  {
+    "route_short_name": "456",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "456"
+  },
+  {
+    "route_short_name": "485",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "485"
+  },
+  {
+    "route_short_name": "491",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "491"
+  },
+  {
+    "route_short_name": "593",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "593"
+  },
+  {
+    "route_short_name": "640",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "640"
+  },
+  {
+    "route_short_name": "650",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "650"
+  },
+  {
+    "route_short_name": "652",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "652"
+  },
+  {
+    "route_short_name": "655",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "655"
+  },
+  {
+    "route_short_name": "656",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "656"
+  },
+  {
+    "route_short_name": "658",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "658"
+  },
+  {
+    "route_short_name": "659",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "659"
+  },
+  {
+    "route_short_name": "662",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "662"
+  },
+  {
+    "route_short_name": "720",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "720"
+  },
+  {
+    "route_short_name": "721",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "721"
+  },
+  {
+    "route_short_name": "725",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "725"
+  },
+  {
+    "route_short_name": "726",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "726"
+  },
+  {
+    "route_short_name": "727",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "727"
+  },
+  {
+    "route_short_name": "731",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "731"
+  },
+  {
+    "route_short_name": "732",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "732"
+  },
+  {
+    "route_short_name": "733",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "733"
+  },
+  {
+    "route_short_name": "734",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "734"
+  },
+  {
+    "route_short_name": "735",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "735"
+  },
+  {
+    "route_short_name": "736",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "736"
+  },
+  {
+    "route_short_name": "737",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "737"
+  },
+  {
+    "route_short_name": "742",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "742"
+  },
+  {
+    "route_short_name": "748",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "748"
+  },
+  {
+    "route_short_name": "749",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "749"
+  },
+  {
+    "route_short_name": "752",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "752"
+  },
+  {
+    "route_short_name": "754",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "754"
+  },
+  {
+    "route_short_name": "759",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "759"
+  },
+  {
+    "route_short_name": "760",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "760"
+  },
+  {
+    "route_short_name": "761",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "761"
+  },
+  {
+    "route_short_name": "762",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "762"
+  },
+  {
+    "route_short_name": "765",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "765"
+  },
+  {
+    "route_short_name": "766",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "766"
+  },
+  {
+    "route_short_name": "768",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "768"
+  },
+  {
+    "route_short_name": "771",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "771"
+  },
+  {
+    "route_short_name": "772",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "772"
+  },
+  {
+    "route_short_name": "781",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "781"
+  },
+  {
+    "route_short_name": "787",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "787"
+  },
+  {
+    "route_short_name": "796",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "796"
+  },
+  {
+    "route_short_name": "E",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "22"
+  },
+  {
+    "route_short_name": "37",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "37"
+  },
+  {
+    "route_short_name": "61",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "61"
+  },
+  {
+    "route_short_name": "62",
+    "route_color": "CAC0B6",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "62"
+  },
+  {
+    "route_short_name": "66",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "66"
+  },
+  {
+    "route_short_name": "67",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "67"
+  },
+  {
+    "route_short_name": "69",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "69"
+  },
+  {
+    "route_short_name": "70",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "70"
+  },
+  {
+    "route_short_name": "75",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "75"
+  },
+  {
+    "route_short_name": "76",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "76"
+  },
+  {
+    "route_short_name": "77",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "77"
+  },
+  {
+    "route_short_name": "78",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "78"
+  },
+  {
+    "route_short_name": "80",
+    "route_color": "CBCFB3",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "80"
+  },
+  {
+    "route_short_name": "83",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "83"
+  },
+  {
+    "route_short_name": "89",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "89"
+  },
+  {
+    "route_short_name": "94",
+    "route_color": "A9A39B",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "94"
+  },
+  {
+    "route_short_name": "N81",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "366"
+  },
+  {
+    "route_short_name": "N86",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "367"
+  },
+  {
+    "route_short_name": "N87",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "368"
+  },
+  {
+    "route_short_name": "N88",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "369"
+  },
+  {
+    "route_short_name": "N92",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "371"
+  },
+  {
+    "route_short_name": "N95",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "372"
+  },
+  {
+    "route_short_name": "811",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "811"
+  },
+  {
+    "route_short_name": "812",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "812"
+  },
+  {
+    "route_short_name": "813",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "813"
+  },
+  {
+    "route_short_name": "816",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "816"
+  },
+  {
+    "route_short_name": "817",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "817"
+  },
+  {
+    "route_short_name": "842",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "842"
+  },
+  {
+    "route_short_name": "845",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "845"
+  },
+  {
+    "route_short_name": "850",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "850"
+  },
+  {
+    "route_short_name": "851",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "851"
+  },
+  {
+    "route_short_name": "852",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "852"
+  },
+  {
+    "route_short_name": "853",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "853"
+  },
+  {
+    "route_short_name": "854",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "854"
+  },
+  {
+    "route_short_name": "856",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "856"
+  },
+  {
+    "route_short_name": "857",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "857"
+  },
+  {
+    "route_short_name": "858",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "858"
+  },
+  {
+    "route_short_name": "862",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "862"
+  },
+  {
+    "route_short_name": "867",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "867"
+  },
+  {
+    "route_short_name": "869",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "869"
+  },
+  {
+    "route_short_name": "870",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "870"
+  },
+  {
+    "route_short_name": "871",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "871"
+  },
+  {
+    "route_short_name": "875",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "875"
+  },
+  {
+    "route_short_name": "879",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "879"
+  },
+  {
+    "route_short_name": "880",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "880"
+  },
+  {
+    "route_short_name": "882",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "882"
+  },
+  {
+    "route_short_name": "883",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "883"
+  },
+  {
+    "route_short_name": "884",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "884"
+  },
+  {
+    "route_short_name": "885",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "885"
+  },
+  {
+    "route_short_name": "888",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "888"
+  },
+  {
+    "route_short_name": "921",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "921"
+  },
+  {
+    "route_short_name": "922",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "922"
+  },
+  {
+    "route_short_name": "923",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "923"
+  },
+  {
+    "route_short_name": "925",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "925"
+  },
+  {
+    "route_short_name": "931",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "931"
+  },
+  {
+    "route_short_name": "932",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "932"
+  },
+  {
+    "route_short_name": "940",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "940"
+  },
+  {
+    "route_short_name": "941",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "941"
+  },
+  {
+    "route_short_name": "950",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "950"
+  },
+  {
+    "route_short_name": "951",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "951"
+  },
+  {
+    "route_short_name": "952",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "952"
+  },
+  {
+    "route_short_name": "955",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "955"
+  },
+  {
+    "route_short_name": "961",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "961"
+  },
+  {
+    "route_short_name": "962",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "962"
+  },
+  {
+    "route_short_name": "970",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "970"
+  },
+  {
+    "route_short_name": "972",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "972"
+  },
+  {
+    "route_short_name": "973",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "973"
+  },
+  {
+    "route_short_name": "974",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "974"
+  },
+  {
+    "route_short_name": "991",
+    "route_color": "E30052",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "991"
+  },
+  {
+    "route_short_name": "992",
+    "route_color": "E30052",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "992"
+  },
+  {
+    "route_short_name": "993",
+    "route_color": "E30052",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "993"
+  },
+  {
+    "route_short_name": "994",
+    "route_color": "E30052",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "994"
+  },
+  {
+    "route_short_name": "995",
+    "route_color": "E30052",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "995"
+  },
+  {
+    "route_short_name": "35",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "35"
+  },
+  {
+    "route_short_name": "893",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "893"
+  },
+  {
+    "route_short_name": "38",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "38"
+  },
+  {
+    "route_short_name": "39",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "39"
+  },
+  {
+    "route_short_name": "40",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "40"
+  },
+  {
+    "route_short_name": "64",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "64"
+  },
+  {
+    "route_short_name": "73",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "73"
+  },
+  {
+    "route_short_name": "79",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "79"
+  },
+  {
+    "route_short_name": "121",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "121"
+  },
+  {
+    "route_short_name": "122",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "122"
+  },
+  {
+    "route_short_name": "123",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "123"
+  },
+  {
+    "route_short_name": "125",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "125"
+  },
+  {
+    "route_short_name": "126",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "126"
+  },
+  {
+    "route_short_name": "127",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "127"
+  },
+  {
+    "route_short_name": "128",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "128"
+  },
+  {
+    "route_short_name": "129",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "129"
+  },
+  {
+    "route_short_name": "131",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "131"
+  },
+  {
+    "route_short_name": "132",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "132"
+  },
+  {
+    "route_short_name": "133",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "133"
+  },
+  {
+    "route_short_name": "134",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "134"
+  },
+  {
+    "route_short_name": "136",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "136"
+  },
+  {
+    "route_short_name": "137",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "137"
+  },
+  {
+    "route_short_name": "140",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "140"
+  },
+  {
+    "route_short_name": "142",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "142"
+  },
+  {
+    "route_short_name": "145",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "145"
+  },
+  {
+    "route_short_name": "151",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "151"
+  },
+  {
+    "route_short_name": "152",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "152"
+  },
+  {
+    "route_short_name": "153",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "153"
+  },
+  {
+    "route_short_name": "156",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "156"
+  },
+  {
+    "route_short_name": "170",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "170"
+  },
+  {
+    "route_short_name": "N27",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "377"
+  },
+  {
+    "route_short_name": "LAF",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "26"
+  },
+  {
+    "route_short_name": "N11",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "341"
+  },
+  {
+    "route_short_name": "N12",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "342"
+  },
+  {
+    "route_short_name": "N13",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "343"
+  },
+  {
+    "route_short_name": "N14",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "344"
+  },
+  {
+    "route_short_name": "N15",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "345"
+  },
+  {
+    "route_short_name": "N16",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "346"
+  },
+  {
+    "route_short_name": "N17",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "347"
+  },
+  {
+    "route_short_name": "N18",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "348"
+  },
+  {
+    "route_short_name": "N19",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "349"
+  },
+  {
+    "route_short_name": "N30",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "352"
+  },
+  {
+    "route_short_name": "N1",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "391"
+  },
+  {
+    "route_short_name": "N2",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "392"
+  },
+  {
+    "route_short_name": "N4",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "394"
+  },
+  {
+    "route_short_name": "N5",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "395"
+  },
+  {
+    "route_short_name": "N6",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "396"
+  },
+  {
+    "route_short_name": "N7",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "397"
+  },
+  {
+    "route_short_name": "N8",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "398"
+  },
+  {
+    "route_short_name": "175",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "175"
+  },
+  {
+    "route_short_name": "176",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "176"
+  },
+  {
+    "route_short_name": "188",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "188"
+  },
+  {
+    "route_short_name": "189",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "189"
+  },
+  {
+    "route_short_name": "150",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "150"
+  },
+  {
+    "route_short_name": "155",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "155"
+  },
+  {
+    "route_short_name": "160",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "160"
+  },
+  {
+    "route_short_name": "200",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "200"
+  },
+  {
+    "route_short_name": "201",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "201"
+  },
+  {
+    "route_short_name": "205",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "205"
+  },
+  {
+    "route_short_name": "210",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "210"
+  },
+  {
+    "route_short_name": "212",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "212"
+  },
+  {
+    "route_short_name": "213",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "213"
+  },
+  {
+    "route_short_name": "215",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "215"
+  },
+  {
+    "route_short_name": "220",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "220"
+  },
+  {
+    "route_short_name": "221",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "221"
+  },
+  {
+    "route_short_name": "223",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "223"
+  },
+  {
+    "route_short_name": "225",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "225"
+  },
+  {
+    "route_short_name": "227",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "227"
+  },
+  {
+    "route_short_name": "228",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "228"
+  },
+  {
+    "route_short_name": "229",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "229"
+  },
+  {
+    "route_short_name": "230",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "230"
+  },
+  {
+    "route_short_name": "232",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "232"
+  },
+  {
+    "route_short_name": "235",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "235"
+  },
+  {
+    "route_short_name": "240",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "240"
+  },
+  {
+    "route_short_name": "245",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "245"
+  },
+  {
+    "route_short_name": "280",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "280"
+  },
+  {
+    "route_short_name": "N63",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "351"
+  },
+  {
+    "route_short_name": "N51",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "354"
+  },
+  {
+    "route_short_name": "N52",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "355"
+  },
+  {
+    "route_short_name": "N53",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "356"
+  },
+  {
+    "route_short_name": "N64",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "359"
+  },
+  {
+    "route_short_name": "N68",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "363"
+  },
+  {
+    "route_short_name": "N22",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "373"
+  },
+  {
+    "route_short_name": "N23",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "374"
+  },
+  {
+    "route_short_name": "N24",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "375"
+  },
+  {
+    "route_short_name": "N26",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "376"
+  },
+  {
+    "route_short_name": "N69",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "378"
+  },
+  {
+    "route_short_name": "N54",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "379"
+  },
+  {
+    "route_short_name": "N60",
+    "route_color": "000000",
+    "route_text_color": "FFF200",
+    "Linie_NR_DIVA": "400"
+  },
+  {
+    "route_short_name": "501",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "501"
+  },
+  {
+    "route_short_name": "503",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "503"
+  },
+  {
+    "route_short_name": "504",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "504"
+  },
+  {
+    "route_short_name": "510",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "510"
+  },
+  {
+    "route_short_name": "515",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "515"
+  },
+  {
+    "route_short_name": "520",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "520"
+  },
+  {
+    "route_short_name": "521",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "521"
+  },
+  {
+    "route_short_name": "522",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "522"
+  },
+  {
+    "route_short_name": "523",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "523"
+  },
+  {
+    "route_short_name": "524",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "524"
+  },
+  {
+    "route_short_name": "525",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "525"
+  },
+  {
+    "route_short_name": "530",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "530"
+  },
+  {
+    "route_short_name": "531",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "531"
+  },
+  {
+    "route_short_name": "533-P",
+    "route_color": "000000",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "533"
+  },
+  {
+    "route_short_name": "534",
+    "route_color": "000000",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "534"
+  },
+  {
+    "route_short_name": "535",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "535"
+  },
+  {
+    "route_short_name": "540",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "540"
+  },
+  {
+    "route_short_name": "542",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "542"
+  },
+  {
+    "route_short_name": "543",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "543"
+  },
+  {
+    "route_short_name": "545",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "545"
+  },
+  {
+    "route_short_name": "546",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "546"
+  },
+  {
+    "route_short_name": "555",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "555"
+  },
+  {
+    "route_short_name": "605",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "605"
+  },
+  {
+    "route_short_name": "612",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "612"
+  },
+  {
+    "route_short_name": "615",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "615"
+  },
+  {
+    "route_short_name": "161",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "161"
+  },
+  {
+    "route_short_name": "620",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "620"
+  },
+  {
+    "route_short_name": "621",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "621"
+  },
+  {
+    "route_short_name": "630",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "630"
+  },
+  {
+    "route_short_name": "634",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "634"
+  },
+  {
+    "route_short_name": "165",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "165"
+  },
+  {
+    "route_short_name": "665",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "665"
+  },
+  {
+    "route_short_name": "670",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "670"
+  },
+  {
+    "route_short_name": "675",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "675"
+  },
+  {
+    "route_short_name": "676",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "676"
+  },
+  {
+    "route_short_name": "677",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "677"
+  },
+  {
+    "route_short_name": "680",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "680"
+  },
+  {
+    "route_short_name": "E",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "710"
+  },
+  {
+    "route_short_name": "E",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "711"
+  },
+  {
+    "route_short_name": "E",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "712"
+  },
+  {
+    "route_short_name": "E",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "713"
+  },
+  {
+    "route_short_name": "805",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "805"
+  },
+  {
+    "route_short_name": "806",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "806"
+  },
+  {
+    "route_short_name": "807",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "807"
+  },
+  {
+    "route_short_name": "809",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "809"
+  },
+  {
+    "route_short_name": "825",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "825"
+  },
+  {
+    "route_short_name": "827",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "827"
+  },
+  {
+    "route_short_name": "830",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "830"
+  },
+  {
+    "route_short_name": "831",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "831"
+  },
+  {
+    "route_short_name": "832",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "832"
+  },
+  {
+    "route_short_name": "833",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "833"
+  },
+  {
+    "route_short_name": "834",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "834"
+  },
+  {
+    "route_short_name": "835",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "835"
+  },
+  {
+    "route_short_name": "837",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "837"
+  },
+  {
+    "route_short_name": "184",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "184"
+  },
+  {
+    "route_short_name": "185",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "185"
+  },
+  {
+    "route_short_name": "307",
+    "route_color": "CA7D3C",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "307"
+  },
+  {
+    "route_short_name": "743",
+    "route_color": "E20A16",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "743"
+  },
+  {
+    "route_short_name": "744",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "744"
+  },
+  {
+    "route_short_name": "751",
+    "route_color": "11296F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "751"
+  },
+  {
+    "route_short_name": "301",
+    "route_color": "8AB51F",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "301"
+  },
+  {
+    "route_short_name": "302",
+    "route_color": "00892F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "302"
+  },
+  {
+    "route_short_name": "303",
+    "route_color": "11296F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "303"
+  },
+  {
+    "route_short_name": "304",
+    "route_color": "E20A16",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "304"
+  },
+  {
+    "route_short_name": "305",
+    "route_color": "734522",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "305"
+  },
+  {
+    "route_short_name": "306",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "306"
+  },
+  {
+    "route_short_name": "308",
+    "route_color": "E12472",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "308"
+  },
+  {
+    "route_short_name": "309",
+    "route_color": "008DC5",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "309"
+  },
+  {
+    "route_short_name": "311",
+    "route_color": "FF5D55",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "311"
+  },
+  {
+    "route_short_name": "314",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "314"
+  },
+  {
+    "route_short_name": "325",
+    "route_color": "FFFFFF",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "325"
+  },
+  {
+    "route_short_name": "701",
+    "route_color": "008DC5",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "701"
+  },
+  {
+    "route_short_name": "703",
+    "route_color": "FFCC00",
+    "route_text_color": "000000",
+    "Linie_NR_DIVA": "703"
+  },
+  {
+    "route_short_name": "704",
+    "route_color": "8E224D",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "704"
+  },
+  {
+    "route_short_name": "705",
+    "route_color": "00892F",
+    "route_text_color": "FFFFFF",
+    "Linie_NR_DIVA": "705"
+  }
+]
