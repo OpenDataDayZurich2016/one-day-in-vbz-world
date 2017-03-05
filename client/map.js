@@ -12,8 +12,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var tripMarkers = {};
 var vbzStops = {};
 var vbzMarkerOptions = {
-    radius: 4,
-    fillColor: '#ff7800',
+    radius: 2,
+    fillColor: '#00008B',
     color: '#000',
     weight: 1,
     opacity: 1,
