@@ -154,7 +154,7 @@ function parseTrips(data) {
             marker.setLatLng(latlng);
         }, 100);
 
-        tripMarkers[tripId] = marker;
+        tripMarkers[trip.trip_id] = marker;
     }
 
     for (var trip of data) {
