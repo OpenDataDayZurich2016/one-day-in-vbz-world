@@ -125,7 +125,7 @@ function loadTrips() {
     lastLoadTime = timeNow;
     $.ajax({
         dataType: 'json',
-        url: 'routes?date=2016-07-01&now=' + timeNow,
+        url: 'http://localhost:8080/routes?date=2016-07-01&now=' + timeNow,
         success: parseTrips,
         error: function(jqXHR, textStatus, errorThrown) {
             debugger;
