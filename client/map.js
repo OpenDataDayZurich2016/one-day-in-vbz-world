@@ -114,13 +114,32 @@ $.ajax({
             vbzStops[stopCode] = jsonFeature;
         });
 
-        timer.init();
+        loadColors();
     },
     error: function(jqXHR, textStatus, errorThrown) {
         debugger;
     }
 });
 
+var colorsData = {};
+function loadColors() {
+    $.ajax({
+        dataType: 'json',
+        url: 'colors.json',
+        success: function(data) {
+            $(data).each(function(idx, row) {
+                let vbz_line = row.route_short_name;
+                colorsData[vbz_line] = row;
+            });
+
+            timer.init();
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            debugger;
+        }
+    });
+}
+ 
 function loadTrips() {
     lastLoadTime = timeNow;
     $.ajax({
@@ -189,26 +208,49 @@ function computeTripPosition(trip) {
 }
 
 function parseTrips(data) {
-    for (var trip of data) {
-        if (params.lineFilter && trip.vbzLine !== params.lineFilter) {
+    function parseTrip(tripData) {
+        var vbzLine = tripData.vbzLine;
+
+        var markerOptions = {
+            radius: 8,
+            fillColor: '#CACACA',
+            color: '#000',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 1.0
+        };
+
+        var colorData = colorsData[vbzLine];
+        if (colorData) {
+            markerOptions.fillColor = '#' + colorData.route_color;
+            markerOptions.color = '#' + colorData.route_text_color;
+        }
+
+        var marker = L.circleMarker([0, 0], markerOptions);
+        marker.addTo(map).bindPopup(function(){
+            let vbzLine = tripData.vbzLine;
+            return vbzLine;
+        });
+
+        tripMarkers[tripData.trip_id] = {
+            marker: marker,
+            trip: tripData
+        };
+    }
+
+    for (var tripData of data) {
+        if (params.lineFilter && tripData.vbzLine !== params.lineFilter) {
             continue;
         }
 
-        var tripId = trip.trip_id;
+        var tripId = tripData.trip_id;
         
         if (tripMarkers[tripId]) {
             continue;
         }
 
-        var marker = L.marker([0, 0]);
-        marker.addTo(map).bindPopup(function(){
-            let vbzLine = trip.vbzLine;
-            return vbzLine;
-        });
-
-        tripMarkers[trip.trip_id] = {
-            marker: marker,
-            trip: trip
-        };
+        parseTrip(tripData);
     }
 }
+
+
