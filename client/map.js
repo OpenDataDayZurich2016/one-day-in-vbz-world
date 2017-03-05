@@ -1,3 +1,4 @@
+/* global L:false, $:false */
 var map = L.map('mapid').setView([47.38, 8.54], 14);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoidmFzaWxlIiwiYSI6IjA1emRjS0EifQ.taY320EMCSP-gLIrZQKb7A', {
