@@ -144,8 +144,8 @@ function parseTrips(data) {
     function initMarker(trip) {
         var marker = L.marker([0, 0]);
         marker.addTo(map).bindPopup(function(){
-            let zvv_line = trip.zvv_line;
-            return zvv_line;
+            let vbzLine = trip.vbzLine;
+            return vbzLine;
         });
         
         setInterval(function(){
@@ -157,7 +157,7 @@ function parseTrips(data) {
     }
 
     for (var trip of data) {
-        if (params.lineFilter && trip.zvv_line != params.lineFilter) {
+        if (params.lineFilter && trip.vbzLine != params.lineFilter) {
             continue;
         }
 
