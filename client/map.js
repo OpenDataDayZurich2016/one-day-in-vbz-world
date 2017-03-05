@@ -9,8 +9,8 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     id: 'mapbox.streets'
 }).addTo(map);
 
+var tripMarkers = {};
 var vbzStops = {};
-
 var vbzMarkerOptions = {
     radius: 4,
     fillColor: '#ff7800',
@@ -45,6 +45,14 @@ var timer = (function(){
             let timeMultiply = 10;
 
             timeNow += tickMs / 1000 * timeMultiply;
+
+            // Main update loop
+            for (let tripId in tripMarkers) {
+                var data = tripMarkers[tripId];
+                var latlng = computeTripPosition(data.trip);
+                data.marker.setLatLng(latlng);
+            }
+
             document.getElementById('current-time').innerText = new Date(1000 * timeNow).toISOString().substr(11, 8);
         }, tickMs);
     }
@@ -80,9 +88,6 @@ $.ajax({
         debugger;
     }
 });
-
-var tripMarkers = {};
-
 
 function loadTrips() {
     $.ajax({
@@ -142,21 +147,6 @@ function computeTripPosition(trip) {
 }
 
 function parseTrips(data) {
-    function initMarker(trip) {
-        var marker = L.marker([0, 0]);
-        marker.addTo(map).bindPopup(function(){
-            let vbzLine = trip.vbzLine;
-            return vbzLine;
-        });
-        
-        setInterval(function(){
-            var latlng = computeTripPosition(trip);
-            marker.setLatLng(latlng);
-        }, 100);
-
-        tripMarkers[trip.trip_id] = marker;
-    }
-
     for (var trip of data) {
         if (params.lineFilter && trip.vbzLine != params.lineFilter) {
             continue;
@@ -168,7 +158,16 @@ function parseTrips(data) {
             continue;
         }
 
-        initMarker(trip);
+        var marker = L.marker([0, 0]);
+        marker.addTo(map).bindPopup(function(){
+            let vbzLine = trip.vbzLine;
+            return vbzLine;
+        });
+
+        tripMarkers[trip.trip_id] = {
+            marker: marker,
+            trip: trip
+        };
     }
 }
 
