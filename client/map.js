@@ -12,7 +12,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 var tripMarkers = {};
 var vbzStops = {};
 var vbzMarkerOptions = {
-    radius: 2,
+    radius: 3,
     fillColor: '#00008B',
     color: '#000',
     weight: 1,
@@ -212,24 +212,35 @@ function parseTrips(data) {
         var vbzLine = tripData.vbzLine;
 
         var markerOptions = {
-            radius: 8,
+            radius: 10,
             fillColor: '#CACACA',
             color: '#000',
             weight: 1,
             opacity: 1,
-            fillOpacity: 1.0
+            fillOpacity: 1.0,
+            title: vbzLine
         };
 
         var colorData = colorsData[vbzLine];
+        var tooltipClassName = 'vbzMarker';
         if (colorData) {
             markerOptions.fillColor = '#' + colorData.route_color;
             markerOptions.color = '#' + colorData.route_text_color;
+
+            let isBlackText = colorData.route_text_color === '000000';
+            if (isBlackText) {
+                tooltipClassName = 'vbzMarker vbzMarkerBlack';    
+            }
         }
 
         var marker = L.circleMarker([0, 0], markerOptions);
         marker.addTo(map).bindPopup(function(){
             let vbzLine = tripData.vbzLine;
             return vbzLine;
+        }).bindTooltip(vbzLine, {
+            permanent: true,
+            className: tooltipClassName,
+            direction: 'center'
         });
 
         tripMarkers[tripData.trip_id] = {
