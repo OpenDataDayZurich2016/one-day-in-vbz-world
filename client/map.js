@@ -22,6 +22,7 @@ var vbzMarkerOptions = {
 
 var params = {};
 var timeNow = 35010; // default is 09:44
+var lastLoadTime;
 
 function parseParams() {
     if (window.location.hash) {
@@ -62,6 +63,10 @@ var timer = (function(){
             let timeMultiply = 10;
 
             timeNow += tickMs / 1000 * timeMultiply;
+            let elapsedTimeSinceLastLoad = timeNow - lastLoadTime;
+            if (elapsedTimeSinceLastLoad > 60) {
+                loadTrips();
+            }
 
             // Main update loop
             for (let tripId in tripMarkers) {
@@ -70,7 +75,7 @@ var timer = (function(){
                 data.marker.setLatLng(latlng);
             }
 
-            let hms = new Date(1000 * timeNow).toISOString().substr(11, 8);
+            let hms = new Date(1000 * timeNow).toISOString().substr(11, 5);
             document.getElementById('current-time').innerText = hms;
             document.getElementById('time-slider').value = timeNow;
         }, tickMs);
@@ -117,6 +122,7 @@ $.ajax({
 });
 
 function loadTrips() {
+    lastLoadTime = timeNow;
     $.ajax({
         dataType: 'json',
         url: 'routes?date=2016-07-01&now=' + timeNow,
@@ -206,5 +212,3 @@ function parseTrips(data) {
         };
     }
 }
-
-
