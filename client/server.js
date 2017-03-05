@@ -1,5 +1,6 @@
 // var fs = require('fs');
 var app = require('express')();
+var cors = require('cors');
 var server = require('http').Server(app);
 
 // Run the webserver on port 8080
@@ -37,6 +38,8 @@ var routes = {
         return result;
     }
 };
+
+app.use(cors());
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/map.html');
