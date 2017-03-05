@@ -56,11 +56,11 @@ var timer = (function(){
 
 
 $.ajax({
-    dataType: "json",
-    url: "stops.geojson",
+    dataType: 'json',
+    url: 'stops.geojson',
     success: function(data) {
         $(data.features).each(function(key, jsonFeature) {
-            var stop_code = jsonFeature.properties.stop_code;
+            var stopCode = jsonFeature.properties.stop_code;
 
             L.geoJSON(jsonFeature, {
                 pointToLayer: function (f, latlng) {
@@ -71,7 +71,7 @@ $.ajax({
                 return p.stop_code + '<br/>' + p.Name1;
             }).addTo(map);
 
-            vbzStops[stop_code] = jsonFeature;
+            vbzStops[stopCode] = jsonFeature;
         });
 
         timer.init();
@@ -86,8 +86,8 @@ var tripMarkers = {};
 
 function loadTrips() {
     $.ajax({
-        dataType: "json",
-        url: "routes?date=2016-07-01&now=" + timeNow,
+        dataType: 'json',
+        url: 'routes?date=2016-07-01&now=' + timeNow,
         success: parseTrips,
         error: function(jqXHR, textStatus, errorThrown) {
             debugger;
