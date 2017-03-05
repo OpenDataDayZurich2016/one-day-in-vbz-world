@@ -12,6 +12,24 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <style>
+        body {
+            margin: 0;
+        }
+        #current-time {
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            background: white;
+            font-family: Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 10px;
+            border-bottom: 1px solid #aaa;
+            border-left: 1px solid #aaa;
+        }
+    </style>
     
 </head>
 <body>
@@ -19,6 +37,7 @@
 
 
 <div id="mapid" style="width: 800px; height: 600px;"></div>
+<div id="current-time"/>
 <script src="map.js"></script>
 
 

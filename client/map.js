@@ -45,6 +45,7 @@ var timer = (function(){
             let timeMultiply = 10;
 
             timeNow += tickMs / 1000 * timeMultiply;
+            document.getElementById('current-time').innerText = new Date(1000 * timeNow).toISOString().substr(11, 8);
         }, tickMs);
     }
 
