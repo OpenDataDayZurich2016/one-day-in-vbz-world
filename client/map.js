@@ -148,7 +148,7 @@ function computeTripPosition(trip) {
 
 function parseTrips(data) {
     for (var trip of data) {
-        if (params.lineFilter && trip.vbzLine != params.lineFilter) {
+        if (params.lineFilter && trip.vbzLine !== params.lineFilter) {
             continue;
         }
 
