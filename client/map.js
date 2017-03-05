@@ -9,12 +9,12 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
     id: 'mapbox.streets'
 }).addTo(map);
 
-var vbz_stops = {};
+var vbzStops = {};
 
-var vbz_marker_options = {
+var vbzMarkerOptions = {
     radius: 4,
-    fillColor: "#ff7800",
-    color: "#000",
+    fillColor: '#ff7800',
+    color: '#000',
     weight: 1,
     opacity: 1,
     fillOpacity: 0.8
@@ -63,14 +63,14 @@ $.ajax({
 
             L.geoJSON(jsonFeature, {
                 pointToLayer: function (f, latlng) {
-                    return L.circleMarker(latlng, vbz_marker_options);
+                    return L.circleMarker(latlng, vbzMarkerOptions);
                 }
             }).bindPopup(function(node){
                 var p = node.feature.properties;
                 return p.stop_code + '<br/>' + p.Name1;
             }).addTo(map);
 
-            vbz_stops[stop_code] = jsonFeature;
+            vbzStops[stop_code] = jsonFeature;
         });
 
         timer.init();
@@ -101,8 +101,8 @@ function computeTripPosition(trip) {
 
         var segment = trip.segments[idx];
 
-        var vbzStopA = vbz_stops[segment.from_stop_code];
-        var vbzStopB = vbz_stops[segment.to_stop_code];
+        var vbzStopA = vbzStops[segment.from_stop_code];
+        var vbzStopB = vbzStops[segment.to_stop_code];
 
         var depA = segment.from_time_actual;
 
@@ -141,7 +141,6 @@ function computeTripPosition(trip) {
 }
 
 function parseTrips(data) {
-    // data = data.slice(0, 1);
     function initMarker(trip) {
         var marker = L.marker([0, 0]);
         marker.addTo(map).bindPopup(function(){
