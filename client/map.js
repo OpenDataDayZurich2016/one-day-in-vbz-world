@@ -87,6 +87,7 @@ window.addEventListener('hashchange', function () {
 }, false);
 document.getElementById('time-slider').oninput = function() {
     timeNow = parseInt(this.value);
+    loadTrips();
 };
 
 $.ajax({
