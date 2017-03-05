@@ -129,8 +129,17 @@ function computeTripPosition(trip) {
                 var timeAC = timeNow - depA;
                 var timeAB = segment.to_time_actual - depA;
                 var ratio = timeAC / timeAB;
-                var coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
-                var coordY = vbzStopA.geometry.coordinates[1] + (vbzStopB.geometry.coordinates[1] - vbzStopA.geometry.coordinates[1]) * ratio;
+                var coordX, coordY;
+                if (!isNaN(ratio)) {
+                    coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
+                    coordY = vbzStopA.geometry.coordinates[1] + (vbzStopB.geometry.coordinates[1] - vbzStopA.geometry.coordinates[1]) * ratio;
+                } else {
+                    // VASILE: Please check if this makes sense to you
+                    // On some points, the ratio ends up being NaN so we
+                    // take stop A as fallback
+                    coordX = vbzStopA.geometry.coordinates[0];
+                    coordY = vbzStopA.geometry.coordinates[1];
+                }
 
                 coords = [coordY, coordX];
             } else {
