@@ -128,7 +128,7 @@ function loadColors() {
         url: 'colors.json',
         success: function(data) {
             $(data).each(function(idx, row) {
-                let vbz_line = row.route_short_name;
+                let vbz_line = row.Linie_NR_DIVA;
                 colorsData[vbz_line] = row;
             });
 
