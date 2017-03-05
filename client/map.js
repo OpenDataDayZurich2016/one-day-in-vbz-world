@@ -21,19 +21,36 @@ var vbzMarkerOptions = {
 };
 
 var params = {};
+var timeNow = 35010; // default is 09:44
 
-if (window.location.hash) {
-    window.location.hash.substring(1).split('&').forEach(i => {
-        var param = i.split('=');
-        params[param[0]] = param[1];
-    });
+function parseParams() {
+    if (window.location.hash) {
+        window.location.hash.substring(1).split('&').forEach(i => {
+            var param = i.split('=');
+            params[param[0]] = param[1];
+        });
+    }
+
+    if (params.time) {
+        let isNumeric = !isNaN(parseFloat(params.time)) && isFinite(params.time);
+        if (isNumeric) {
+            timeNow = parseInt(params.time);
+        } else {
+            let hms = params.time.split(':');
+            if (hms.length === 2) {
+                hms.push(0);
+            }
+
+            timeNow = (+hms[0]) * 60 * 60 + (+hms[1]) * 60 + (+hms[2]); 
+        }
+    }
 }
 
-var timeNow = parseInt(params.time || 35010); // default is 09:44
 var timer = (function(){
     var tickMs = 100; // we'll decrease it to 100 later
 
     function init() {
+        parseParams();
         loadTrips();
 
         setInterval(function(){
@@ -53,7 +70,9 @@ var timer = (function(){
                 data.marker.setLatLng(latlng);
             }
 
-            document.getElementById('current-time').innerText = new Date(1000 * timeNow).toISOString().substr(11, 8);
+            let hms = new Date(1000 * timeNow).toISOString().substr(11, 8);
+            document.getElementById('current-time').innerText = hms;
+            document.getElementById('time-slider').value = timeNow;
         }, tickMs);
     }
 
@@ -62,6 +81,13 @@ var timer = (function(){
     }
 })();
 
+window.addEventListener('hashchange', function () {
+    parseParams();
+    loadTrips();
+}, false);
+document.getElementById('time-slider').oninput = function() {
+    timeNow = parseInt(this.value);
+};
 
 $.ajax({
     dataType: 'json',
