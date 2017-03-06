@@ -70,9 +70,8 @@ var timer = (function(){
 
             // Main update loop
             for (let tripId in tripMarkers) {
-                var data = tripMarkers[tripId];
-                var latlng = computeTripPosition(data.trip);
-                data.marker.setLatLng(latlng);
+                var tripData = tripMarkers[tripId];
+                updateTripPosition(tripData);
             }
 
             let hms = new Date(1000 * timeNow).toISOString().substr(11, 5);
@@ -152,8 +151,11 @@ function loadTrips() {
     });
 }
 
-function computeTripPosition(trip) {
+function updateTripPosition(tripData) {
     var coords = [0, 0];
+    var tripStatus = 'UNKNOWN';
+    var trip = tripData.trip;
+    var delaySeconds = 0;
 
     for (var idx = 0; idx < trip.segments.length; idx++) {
 
@@ -166,10 +168,11 @@ function computeTripPosition(trip) {
 
         var depB;
         var isLastStop = idx === (trip.segments.length - 1);
+        var nextSegment;
         if (isLastStop) {
             depB = segment.to_time_actual;
         } else {
-            var nextSegment = trip.segments[idx + 1];
+            nextSegment = trip.segments[idx + 1];
             depB = nextSegment.from_time_actual;
         }
 
@@ -178,6 +181,8 @@ function computeTripPosition(trip) {
 
             if (timeNow <= arrB) {
                 // the vehicle is between A and B
+                tripStatus = 'Between ' + segment.from_stop_code + ' and ' + segment.to_stop_code;
+
                 var timeAC = timeNow - depA;
                 var timeAB = segment.to_time_actual - depA;
                 var ratio = timeAC / timeAB;
@@ -193,19 +198,41 @@ function computeTripPosition(trip) {
                     coordY = vbzStopA.geometry.coordinates[1];
                 }
 
+                delaySeconds = segment.to_time_actual - segment.to_time_expected;
+
                 coords = [coordY, coordX];
             } else {
                 // the vehicle is in B
                 var stopBCoords = vbzStopB.geometry.coordinates;
                 coords = [stopBCoords[1], stopBCoords[0]];
+
+                tripStatus = 'In ' + segment.to_stop_code;
+                
+                if (nextSegment) {
+                    delaySeconds = nextSegment.from_time_actual - nextSegment.from_time_expected;    
+                }
             }
 
             break;
         }
     }
 
-    return coords;
+    tripData.marker.setLatLng(coords);
+
+    var popup = tripData.marker.getPopup();
+
+    var html = '<b>Line:</b> ' + tripData.trip.vbzLine;
+    html += '<br/><b>Status:</b> ' + tripStatus;
+    html += '<br/><b>Delay:</b> ' + formatDelayMSS(delaySeconds);
+
+    popup.setContent(html);
 }
+
+// http://stackoverflow.com/questions/3733227/javascript-seconds-to-minutes-and-seconds
+function formatDelayMSS(s){
+    return(s-(s%=60))/60+(9<s?':':':0')+s;
+}
+
 
 function parseTrips(data) {
     function parseTrip(tripData) {
@@ -234,14 +261,12 @@ function parseTrips(data) {
         }
 
         var marker = L.circleMarker([0, 0], markerOptions);
-        marker.addTo(map).bindPopup(function(){
-            let vbzLine = tripData.vbzLine;
-            return vbzLine;
-        }).bindTooltip(vbzLine, {
+        marker.addTo(map).bindTooltip(vbzLine, {
             permanent: true,
             className: tooltipClassName,
             direction: 'center'
         });
+        marker.bindPopup('init...');
 
         tripMarkers[tripData.trip_id] = {
             marker: marker,
