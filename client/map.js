@@ -260,17 +260,36 @@ function parseTrips(data) {
             }
         }
 
+        var popup = L.popup({
+            autoPan: false,
+            offset: [0, -5]
+        }).setContent('init');
+
         var marker = L.circleMarker([0, 0], markerOptions);
         marker.addTo(map).bindTooltip(vbzLine, {
             permanent: true,
             className: tooltipClassName,
             direction: 'center'
+        }).bindPopup(popup);
+        
+        marker.on('click', function(){
+            var stop_ids = [];
+            for (segment of tripData.segments) {
+                stop_ids.push(segment.from_stop_code);
+            }
+
+            let last_segment = tripData.segments[tripData.segments.length - 1];
+            stop_ids.push(last_segment.to_stop_code);
+
+            let vbz_line = tripData.vbzLine;
+            let trip_color_data = colorsData[vbz_line];
+            let route_color = '#' + colorData.route_color;
+            
+            routePolyline.show(route_color, stop_ids);
         });
-        marker.bindPopup(function(){
-            return 'init...';   
-        }, {
-            autoPan: false,
-            offset: [0, -5]
+
+        marker.on('popupclose', function(){
+            routePolyline.hide();
         });
 
         tripMarkers[tripData.trip_id] = {
@@ -294,4 +313,43 @@ function parseTrips(data) {
     }
 }
 
+var routePolyline = (function(){
+    var polyline = L.polyline([], {
+        color: 'red',
+        weight: 5,
+        dashArray: [5, 10]
+    }).addTo(map);
+
+    function show(color, stop_ids) {
+        var coords = [];
+
+        for (stop_id of stop_ids) {
+            let stop_geojson = vbzStops[stop_id];
+            if (stop_geojson === undefined) {
+                console.error('Cannot find ' + stop_id + ' in vbzStops pool');
+                continue;
+            }
+
+            let stop_geojson_coords = stop_geojson.geometry.coordinates;
+            coords.push([stop_geojson_coords[1], stop_geojson_coords[0]]);
+        }
+
+        polyline.setStyle({
+            color: color
+        });
+        polyline.setLatLngs(coords);
+        polyline.redraw();
+    }
+
+    function hide() {
+        var coords = [];
+        polyline.setLatLngs(coords);
+        polyline.redraw();
+    }
+    
+    return {
+        show: show,
+        hide: hide
+    };
+})();
 
