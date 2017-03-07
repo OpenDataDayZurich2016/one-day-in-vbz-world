@@ -266,7 +266,12 @@ function parseTrips(data) {
             className: tooltipClassName,
             direction: 'center'
         });
-        marker.bindPopup('init...');
+        marker.bindPopup(function(){
+            return 'init...';   
+        }, {
+            autoPan: false,
+            offset: [0, -5]
+        });
 
         tripMarkers[tripData.trip_id] = {
             marker: marker,
