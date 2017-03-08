@@ -11,14 +11,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 
 var tripMarkers = {};
 var vbzStops = {};
-var vbzMarkerOptions = {
-    radius: 3,
-    fillColor: '#00008B',
-    color: '#000',
-    weight: 1,
-    opacity: 1,
-    fillOpacity: 0.8
-};
+
 
 var params = {};
 var timeNow = 35010; // default is 09:44
@@ -98,12 +91,21 @@ $.ajax({
     dataType: 'json',
     url: 'stops.geojson',
     success: function(data) {
+        var stop_marker_options = {
+            radius: 3,
+            fillColor: '#00008B',
+            color: '#000',
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.8
+        };
+
         $(data.features).each(function(key, jsonFeature) {
             var stopCode = jsonFeature.properties.stop_code;
 
             L.geoJSON(jsonFeature, {
                 pointToLayer: function (f, latlng) {
-                    return L.circleMarker(latlng, vbzMarkerOptions);
+                    return L.circleMarker(latlng, stop_marker_options);
                 }
             }).bindPopup(function(node){
                 var p = node.feature.properties;
