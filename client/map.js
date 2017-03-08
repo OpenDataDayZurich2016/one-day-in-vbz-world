@@ -256,7 +256,6 @@ function parseTrips(data) {
                 iconAnchor: [10, 10],
                 popupAnchor: [10, 0]
             });
-            console.log(icon);
             marker_icons_pool[vbzLine] = icon;
         }
 
