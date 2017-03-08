@@ -153,6 +153,10 @@ function loadTrips() {
     });
 }
 
+function easeInOutCubic(t) {
+    return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1;
+}
+
 function updateTripPosition(tripData) {
     var coords = [0, 0];
     var tripStatus = 'UNKNOWN';
@@ -187,7 +191,7 @@ function updateTripPosition(tripData) {
 
                 var timeAC = timeNow - depA;
                 var timeAB = segment.to_time_actual - depA;
-                var ratio = timeAC / timeAB;
+                var ratio = easeInOutCubic(timeAC / timeAB);
                 var coordX, coordY;
                 if (!isNaN(ratio)) {
                     coordX = vbzStopA.geometry.coordinates[0] + (vbzStopB.geometry.coordinates[0] - vbzStopA.geometry.coordinates[0]) * ratio;
