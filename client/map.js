@@ -228,9 +228,14 @@ function updateTripPosition(tripData) {
     popup.setContent(html);
 }
 
-// http://stackoverflow.com/questions/3733227/javascript-seconds-to-minutes-and-seconds
-function formatDelayMSS(s){
-    return(s-(s%=60))/60+(9<s?':':':0')+s;
+function formatDelayMSS(s) {
+    if (s < 60) {
+        return s + '"';
+    } else {
+        let minutes = Math.floor(s / 60);
+        let seconds_rest = s - (minutes * 60);
+        return minutes + '\'' + seconds_rest + '"';
+    }
 }
 
 
