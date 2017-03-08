@@ -10,7 +10,7 @@ var routes = {
     cache: {},
     get: function(dateString, from, to) {
         if (!(dateString in this.cache)) {
-           this.cache[dateString] = require(`../generated/routes_data_${dateString}.json`);
+            this.cache[dateString] = require(`../generated/routes_data_${dateString}.json`);
         }
 
         if (!(dateString in this.cache)) {
