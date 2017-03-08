@@ -253,8 +253,7 @@ function parseTrips(data) {
             var icon = L.icon({
                 iconUrl: 'images/vbz_line_markers/route_icon_' + vbzLine + '.png',
                 iconSize: [20, 20],
-                iconAnchor: [10, 10],
-                popupAnchor: [10, 0]
+                iconAnchor: [10, 10]
             });
             marker_icons_pool[vbzLine] = icon;
         }
