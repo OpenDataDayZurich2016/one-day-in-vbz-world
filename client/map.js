@@ -240,44 +240,37 @@ function formatDelayMSS(s) {
     }
 }
 
+var marker_icons_pool = {};
+
 
 function parseTrips(data) {
     function parseTrip(tripData) {
         var vbzLine = tripData.vbzLine;
 
-        var markerOptions = {
-            radius: 10,
-            fillColor: '#CACACA',
-            color: '#000',
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 1.0,
-            title: vbzLine
-        };
-
         var colorData = colorsData[vbzLine];
-        var tooltipClassName = 'vbzMarker';
-        if (colorData) {
-            markerOptions.fillColor = '#' + colorData.route_color;
-            markerOptions.color = '#' + colorData.route_text_color;
-
-            let isBlackText = colorData.route_text_color === '000000';
-            if (isBlackText) {
-                tooltipClassName = 'vbzMarker vbzMarkerBlack';    
-            }
+        
+        if (marker_icons_pool[vbzLine] === undefined) {
+            var icon = L.icon({
+                iconUrl: 'images/vbz_line_markers/route_icon_' + vbzLine + '.png',
+                iconSize: [20, 20],
+                iconAnchor: [10, 10],
+                popupAnchor: [10, 0]
+            });
+            console.log(icon);
+            marker_icons_pool[vbzLine] = icon;
         }
+
+        var marker = L.marker([0, 0], {
+            icon: marker_icons_pool[vbzLine],
+            radius: 10,
+            title: vbzLine
+        });
 
         var popup = L.popup({
             autoPan: false,
             offset: [0, -5]
         }).setContent('init');
-
-        var marker = L.circleMarker([0, 0], markerOptions);
-        marker.addTo(map).bindTooltip(vbzLine, {
-            permanent: true,
-            className: tooltipClassName,
-            direction: 'center'
-        }).bindPopup(popup);
+        marker.addTo(map).bindPopup(popup);
         
         marker.on('click', function(){
             var stop_ids = [];
