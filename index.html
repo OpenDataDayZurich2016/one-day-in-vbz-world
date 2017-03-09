@@ -1,55 +1,106 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+    Stellar by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-    
-    <title>VBZ - Leaflet</title>
+    <head>
+        <title>One Day in VBZ World</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    <style>
-        body {
-            margin: 0;
-        }
-        #current-time {
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 1000;
-            background: white;
-            font-family: Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 2em;
-            padding: 10px;
-            border-bottom: 1px solid #aaa;
-            border-left: 1px solid #aaa;
-        }
-        #time-slider {
-            position: absolute;
-            top: 601px;
-            left: 0;
-            width: 800px;
-        }
-    </style>
-    
-</head>
-<body>
+        <div id="wrapper">
+
+            <header id="header" class="alt">
+                <span class="logo"><img src="assets/images/logo.svg" alt="" /></span>
+                <h1>One Day in VBZ World</h1>
+                <p>A public transport visualization coded during<br /><a href="https://zurich-r-user-group.github.io/hackathon.html">Open Data Day Hackathon in Zurich</a></p>
+            </header>
 
 
+            <nav id="nav">
+                <ul>
+                    <li><a href="#zurifascht" class="active">Z&uuml;ri-F&auml;scht 2016</a></li>
+                    <li><span id="current-time">00:00</span></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
 
-<div id="mapid" style="width: 800px; height: 600px;"></div>
-<input id="time-slider" type="range" max="86400">
-<div id="current-time"/>
+            <div id="main">
 
-<script src="map.js"></script>
+                <section id="zurifascht" class="main">
+                    <div class="spotlight">
+                        <div class="content">
+                            <div id="mapid" style="width: 100%; height: 600px;"></div>
+                            <input id="time-slider" type="range" max="86400" style="width: 100%" />
 
+                            <input type="radio" id="simulation-speed-slow" name="simulation-speed" checked="checked" value="10">
+                            <label for="simulation-speed-slow">Slow</label>
 
+                            <input type="radio" id="simulation-speed-fast" name="simulation-speed" value="100">
+                            <label for="simulation-speed-fast">Fast</label>
 
-</body>
+                            
+                            <h3>What is it?</h3>
+                            <p>The idea of this project is to visualize on a map all VBZ vehicles as the move across the city during the day, with special focus on dates of special events that affect the public transportation network.</p>
+
+                            <h3>How to use?</h3>
+                            <ol>
+                                <li>Use the slider below the map to move through the day.</li>
+                                <li>Click on any tram/bus to see its route.</li>
+                                <li>Sip your coffee while nodding happily.</li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="main special">
+                    <header class="major">
+                        <h2>About</h2>
+                    </header>
+                    <ul class="features">
+                        <li>
+                            <img src="assets/images/vasile.jpg" class="our-faces">
+                            <a href="https://vasile.ch"><h3>Vasile Coțovanu</h3></a>
+                            <p>
+                                <a href="https://twitter.com/vasile23" class="icon fa-twitter alt"><span class="label">Twitter</span></a>
+                                <a href="https://github.com/vasile/" class="icon fa-github alt"><span class="label">Github</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <img src="assets/images/gnz.png" class="our-faces">
+                            <a href="https://gnz.io/"><h3>Gonzalo Casas</h3></a>
+                            <p>
+                                <a href="https://twitter.com/gnz" class="icon fa-twitter alt"><span class="label">Twitter</span></a>
+                                <a href="https://github.com/gonzalocasas/" class="icon fa-github alt"><span class="label">Github</span></a>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <footer id="footer">
+                <p class="copyright">Build with 😂 by <a href="https://twitter.com/vasile23">@vasile23</a> + <a href="https://twitter.com/gnz">@gnz</a>.<br />All content licensed under <a href="https://github.com/OpenDataDayZurich2016/one-day-in-vbz-world/blob/master/LICENSE">CC-BY-SA 4.0</a>. Design by <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </footer>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="map.js"></script>
+
+    </body>
 </html>
-
