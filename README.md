@@ -2,7 +2,7 @@
 
 The idea of this project is to visualize on a map all VBZ vehicles as the move across the city during the day, with special focus on dates of special events that affect the public transportation network.
 
-[Demo](https://opendatadayzurich2016.github.io/one-day-in-vbz-world/)
+[Play with it yourself here!](https://opendatadayzurich2016.github.io/one-day-in-vbz-world/)
 
 ## ZüriFäscht 2016
 
