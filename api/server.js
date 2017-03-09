@@ -1,4 +1,5 @@
 // var fs = require('fs');
+var fetch = require('node-fetch');
 var app = require('express')();
 var cors = require('cors');
 var server = require('http').Server(app);
@@ -6,11 +7,16 @@ var server = require('http').Server(app);
 // Run the webserver on port 8080
 server.listen(8080);
 
+async function loadDataFile(url) {
+    let response = await fetch(url);
+    return await response.json();
+}
+
 var routes = {
     cache: {},
-    get: function(dateString, from, to) {
+    get: async function(dateString, from, to) {
         if (!(dateString in this.cache)) {
-            this.cache[dateString] = require(`../generated/routes_data_${dateString}.json`);
+            this.cache[dateString] = await loadDataFile(`https://github.com/OpenDataDayZurich2016/one-day-in-vbz-world/raw/master/api/data/routes_data_${dateString}.json`);
         }
 
         if (!(dateString in this.cache)) {
@@ -41,7 +47,7 @@ var routes = {
 
 app.use(cors());
 
-app.get('/routes', function (req, res) {
+app.get('/routes', async function (req, res) {
     var from, to;
     if (req.query.now) {
         from = to = req.query.now;
@@ -49,5 +55,5 @@ app.get('/routes', function (req, res) {
         from = req.query.from;
         to = req.query.to;
     }
-    res.json(routes.get(req.query.date, from, to));
+    res.json(await routes.get(req.query.date, from, to));
 });
