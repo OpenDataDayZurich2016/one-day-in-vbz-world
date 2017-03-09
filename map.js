@@ -48,12 +48,7 @@ var timer = (function(){
         loadTrips();
 
         setInterval(function(){
-            // TODO - add timeNow in a UI element
-
-            // when minute changed (i.e. from 09:40 to 09:41)
-            // then call again loadTrips
-
-            let timeMultiply = 10;
+            let timeMultiply = parseInt($('input[name="simulation-speed"]:checked').val());
 
             timeNow += tickMs / 1000 * timeMultiply;
             let elapsedTimeSinceLastLoad = timeNow - lastLoadTime;
@@ -145,7 +140,7 @@ function loadTrips() {
     lastLoadTime = timeNow;
     $.ajax({
         dataType: 'json',
-        url: 'http://localhost:8080/routes?date=2016-07-01&now=' + timeNow,
+        url: 'https://odd-api-bpqowmrdwo.now.sh/routes?date=2016-07-01&now=' + timeNow,
         success: parseTrips,
         error: function(jqXHR, textStatus, errorThrown) {
             debugger;
@@ -255,7 +250,7 @@ function parseTrips(data) {
         
         if (marker_icons_pool[vbzLine] === undefined) {
             var icon = L.icon({
-                iconUrl: 'images/vbz_line_markers/route_icon_' + vbzLine + '.png',
+                iconUrl: 'assets/images/vbz_line_markers/route_icon_' + vbzLine + '.png',
                 iconSize: [20, 20],
                 iconAnchor: [10, 10]
             });
